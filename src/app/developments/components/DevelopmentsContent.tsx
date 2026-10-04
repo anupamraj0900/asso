@@ -19,7 +19,7 @@ const allProjects = [
   location: 'Noida / Delhi NCR',
   category: 'Residential',
   status: 'experience',
-  image: "https://img.rocket.new/generatedImages/rocket_gen_img_4c85651ed-1789152250235.png",
+  image: "/assets/images/windsorgreens.jpeg",
   alt: 'Assotech Windsor Greens apartment building elevation Sector 50 Noida',
   desc: 'Residential development in the Noida / Delhi NCR region.',
   stats: []
@@ -29,7 +29,7 @@ const allProjects = [
   location: 'Delhi NCR',
   category: 'Residential',
   status: 'experience',
-  image: "https://img.rocket.new/generatedImages/rocket_gen_img_1bd2d0a60-1784995469936.png",
+  image: "/assets/images/windsorpark.jpeg",
   alt: 'Windsor Park residential development Delhi NCR',
   desc: 'Residential development in Delhi NCR.',
   stats: []
@@ -39,7 +39,7 @@ const allProjects = [
   location: 'Greater Noida',
   category: 'Residential',
   status: 'experience',
-  image: "https://img.rocket.new/generatedImages/rocket_gen_img_1e46920a3-1766835242597.png",
+  image: "/assets/images/gailapartments.jpg",
   alt: 'GAIL Society residential community Greater Noida',
   desc: 'Residential community in Greater Noida.',
   stats: []
@@ -49,7 +49,7 @@ const allProjects = [
   location: 'Gwalior, Madhya Pradesh',
   category: 'Residential',
   status: 'experience',
-  image: "https://img.rocket.new/generatedImages/rocket_gen_img_48417f143-1789151622329.png",
+  image: "/assets/images/windsorhills.jpeg",
   alt: 'Windsor Hills residential development Gwalior Madhya Pradesh',
   desc: 'Residential development in Gwalior, Madhya Pradesh.',
   stats: []
@@ -59,7 +59,7 @@ const allProjects = [
   location: 'Rudrapur, Uttarakhand',
   category: 'Township',
   status: 'experience',
-  image: "https://img.rocket.new/generatedImages/rocket_gen_img_49808fe63-1789151619279.png",
+  image: "/assets/images/metropoliscity.jpeg",
   alt: 'Metropolis City township development Rudrapur Uttarakhand',
   desc: 'Township development in Rudrapur, Uttarakhand.',
   stats: []

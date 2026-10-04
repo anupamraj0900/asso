@@ -16,7 +16,6 @@ const allProjects = [
   area: '850 – 1,650 sq.ft.',
   possession: 'Q4 2026',
   units: '240 Units',
-  rera: 'MPRERA/PROJ/2024/XXXX',
   highlights: ['Rooftop Infinity Pool', 'EV Charging', 'Smart Home Ready', '24/7 Security'],
   image: "/assets/images/LOGO_windsor-1789125533323.png",
   imageAlt: 'Windsor Heights project logo — a premium residential development by Assotech Windsor Group in Katni, Madhya Pradesh'

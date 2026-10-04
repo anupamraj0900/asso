@@ -2,26 +2,25 @@
 
 import React, { useEffect, useRef, useState } from 'react';
 
-
 const leaders = [
   {
     name: 'Alpana Srivastava',
-    title: 'Designated Partner · Development & Operations',
+    title: 'Designated Partner · Advisory & Governance',
     initials: 'AS',
     bio: [
-      'Alpana leads development execution and operating delivery across the Group\'s real-estate business.',
-      'Her focus spans planning, stakeholder coordination, customer delivery and the on-ground execution required to translate the Group\'s vision into completed communities.',
-      'Her leadership philosophy is simple: commitments made to customers must ultimately be visible on the ground.',
+      'Alpana provides senior guidance to Assotech Windsor Group on key business, governance and long-term strategic matters.',
+      'She supports the leadership team in an advisory capacity, bringing experience, perspective and continuity to the Group’s real-estate operations.',
+      'Her role is focused on guidance, oversight and helping ensure the Group continues to grow with discipline and a long-term outlook.',
     ],
   },
   {
     name: 'Anupam Raj',
-    title: 'Designated Partner · Strategy & Growth',
+    title: 'Designated Partner · Strategy, Operations & Growth',
     initials: 'AR',
     bio: [
-      'Anupam leads corporate strategy, expansion, technology and new-business initiatives across Assotech Windsor Group.',
-      'With an international perspective spanning multiple markets and connections to global technology ecosystems, he is helping drive the Group\'s next phase across technology, real estate and strategic growth.',
-      'He is focused on building Assotech Windsor beyond individual projects into a scalable development platform with a long-term presence across India.',
+      'Anupam leads the Group’s day-to-day business operations, strategy and growth across real estate, technology and new initiatives.',
+      'His responsibilities span development, sales, marketing, customer experience, technology, partnerships and operational execution across the Group.',
+      'He is focused on strengthening execution, building scalable systems and leading Assotech Windsor’s next phase of growth across India, while developing technology and digital capabilities for global markets.',
     ],
   },
 ];
@@ -32,10 +31,16 @@ export default function LeadershipContent() {
 
   useEffect(() => {
     const observer = new IntersectionObserver(
-      ([entry]) => { if (entry.isIntersecting) { setVisible(true); } },
+      ([entry]) => {
+        if (entry.isIntersecting) {
+          setVisible(true);
+        }
+      },
       { threshold: 0.05 }
     );
+
     if (ref?.current) observer?.observe(ref?.current);
+
     return () => observer?.disconnect();
   }, []);
 
@@ -44,15 +49,24 @@ export default function LeadershipContent() {
       {/* Hero */}
       <section className="relative pt-40 pb-24 bg-[#1B4332]">
         <div className="relative z-10 max-w-[1400px] mx-auto px-8">
-          <span className="text-eyebrow text-[#B8975A] block mb-6">Leadership & Management</span>
+          <span className="text-eyebrow text-[#B8975A] block mb-6">
+            Leadership & Management
+          </span>
+
           <div className="w-12 h-px bg-[#B8975A] mb-10" />
+
           <h1 className="font-display font-light text-[#F8F6F0] text-section-xl max-w-3xl">
-            Experience.<br />
-            Execution.<br />
+            Experience.
+            <br />
+            Execution.
+            <br />
             <span className="italic text-[#B8975A]">Perspective.</span>
           </h1>
+
           <p className="text-[#F8F6F0]/50 mt-8 max-w-xl leading-relaxed">
-            Assotech Windsor Group is led by a management team combining decades of real-estate experience with next-generation thinking across development, operations, technology and strategic growth.
+            Assotech Windsor Group combines senior advisory guidance with active
+            executive leadership across strategy, operations, development,
+            technology and growth.
           </p>
         </div>
       </section>
@@ -73,14 +87,28 @@ export default function LeadershipContent() {
               >
                 <div className="lg:col-span-3">
                   <div className="w-24 h-24 bg-[#1B4332] flex items-center justify-center mb-6">
-                    <span className="font-display text-3xl font-light text-[#F8F6F0]">{leader?.initials}</span>
+                    <span className="font-display text-3xl font-light text-[#F8F6F0]">
+                      {leader?.initials}
+                    </span>
                   </div>
-                  <h2 className="font-display text-2xl font-light text-[#1C1C1A] mb-2">{leader?.name}</h2>
-                  <div className="text-eyebrow text-[#B8975A]">{leader?.title}</div>
+
+                  <h2 className="font-display text-2xl font-light text-[#1C1C1A] mb-2">
+                    {leader?.name}
+                  </h2>
+
+                  <div className="text-eyebrow text-[#B8975A]">
+                    {leader?.title}
+                  </div>
                 </div>
+
                 <div className="lg:col-span-9 flex flex-col gap-5 lg:pt-2">
                   {leader?.bio?.map((para, j) => (
-                    <p key={j} className="text-[#6B6558] leading-relaxed">{para}</p>
+                    <p
+                      key={j}
+                      className="text-[#6B6558] leading-relaxed"
+                    >
+                      {para}
+                    </p>
                   ))}
                 </div>
               </div>

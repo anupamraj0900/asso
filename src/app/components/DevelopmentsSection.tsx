@@ -18,7 +18,7 @@ const projects = [
   location: 'Noida / Delhi NCR',
   category: 'Residential',
   status: 'Leadership Experience',
-  image: "https://img.rocket.new/generatedImages/rocket_gen_img_4c85651ed-1789152250235.png",
+  image: "/assets/images/windsorgreens.jpeg",
   alt: 'Assotech Windsor Greens apartment building elevation Sector 50 Noida',
   current: false
 },
@@ -27,7 +27,7 @@ const projects = [
   location: 'Delhi NCR',
   category: 'Residential',
   status: 'Leadership Experience',
-  image: "https://img.rocket.new/generatedImages/rocket_gen_img_455b64c4c-1789152249860.png",
+  image: "/assets/images/windsorpark.jpeg",
   alt: 'Assotech Windsor Park residential development Vaibhav Khand Ghaziabad',
   current: false
 },
@@ -36,7 +36,7 @@ const projects = [
   location: 'Greater Noida',
   category: 'Residential',
   status: 'Leadership Experience',
-  image: "https://img.rocket.new/generatedImages/rocket_gen_img_178549a01-1784192763045.png",
+  image: "/assets/images/gailapartments.jpg",
   alt: 'GAIL Society residential community Greater Noida housing development',
   current: false
 },
@@ -45,7 +45,7 @@ const projects = [
   location: 'Gwalior, Madhya Pradesh',
   category: 'Residential',
   status: 'Leadership Experience',
-  image: "https://img.rocket.new/generatedImages/rocket_gen_img_4d5a1d488-1789152249668.png",
+  image: "/assets/images/windsorhills.jpeg",
   alt: 'Assotech Windsor Hills apartment building elevation City Centre Gwalior',
   current: false
 },
@@ -54,7 +54,7 @@ const projects = [
   location: 'Rudrapur, Uttarakhand',
   category: 'Township',
   status: 'Leadership Experience',
-  image: "https://img.rocket.new/generatedImages/rocket_gen_img_48b60fed2-1789151620925.png",
+  image: "/assets/images/metropoliscity.jpeg",
   alt: 'Metropolis City township development Rudrapur Uttarakhand urban planning',
   current: false
 }];
@@ -95,13 +95,13 @@ export default function DevelopmentsSection() {
             </h2>
           </div>
           <div className="flex items-end">
-            <p
-              className="text-[#6B6558] leading-relaxed opacity-0"
-              style={{ animation: visible ? 'slideInBlur 0.8s cubic-bezier(0.16,1,0.3,1) 0.3s forwards' : 'none' }}>
-              
-              A portfolio spanning Central India and the Delhi NCR region, reflecting decades of development experience and the Group's current active development.
-            </p>
-          </div>
+  <p
+    className="text-[#6B6558] leading-relaxed opacity-0"
+    style={{ animation: visible ? 'slideInBlur 0.8s cubic-bezier(0.16,1,0.3,1) 0.3s forwards' : 'none' }}
+  >
+    With 30,000+ homes delivered across India, our leadership brings decades of real-estate development experience across Central India and the Delhi NCR region.
+  </p>
+</div>
         </div>
 
         {/* Grid */}
